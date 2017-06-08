@@ -1,0 +1,67 @@
+Building real time pipelines
+Distributed streaming platform
+Kafka can publish and subscribe to stream of records - Similar to enterprise messaging system
+It can store streams of records in a fault tolerant  way
+It lets you process streams of records as and when it occurs
+
+Producer - Message broker - Consumer
+
+Kafka is a highly scalable and fault tolerant messaging system
+
+Kafka message Log in Kafka message Log
+
+producer
+The APP that sensda message to kafka
+small to medium sized pice of data
+send each line of message as a array of bytes to kafka
+We have to create a producer app
+
+consumer
+Reads data from kafka
+recepients of data
+producer just send to  kafka server
+Any consumer can request and subscribe to read
+Client keeps requesting and 
+
+broker
+Broker is just a kafka server - meaningful name
+Kafka does is broker to  exchange messages between producer and consumer
+
+cluster
+Cluster is a group of computers
+set of computers  in kafka cluster
+
+topic
+Topic is a uniqwue name for a kafka stream
+create a topic called global orders
+
+partitions
+Data in a broker may be huge
+Solution ias to break the topic and store in different partitions
+Store one partitionin one computer
+We have to take the decision of no of partitions for borker
+
+Offset
+seq no of a message in a partition
+once assigned they never change
+kafka stores FIFO basis - offset starts from 0
+there is no global offsets across partitions
+offfsets a local to a partition
+need to know topic name, partition number and offset number to uniquely identify a message
+
+
+Consumer Group:
+group of consumers act as a single logical unit
+Partitions and consumer group are the room for  scalability
+the max number of consumers in a consumer group is the total number of partitions on a topic
+kafka does not  allow more than 2 consumers to read from a same partition simultaneously
+
+
+Zookeeper:
+zookeper is a used  to provide some coordinaion servicve for distributed system
+
+start zookeeper
+
+
+
+
